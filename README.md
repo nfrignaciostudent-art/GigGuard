@@ -4,7 +4,7 @@ CCDX2TLOLR2PXVOHGTXF772YTU4XDW2LUHLNVPCJWK7KA4C7SXH2IS2F
 ## CONTRACT LINK 
 https://stellar.expert/explorer/testnet/contract/CCDX2TLOLR2PXVOHGTXF772YTU4XDW2LUHLNVPCJWK7KA4C7SXH2IS2F
 
-![PICTURE](Stellar.png)
+![PICTURE](stellar.png)
 
 
 **Milestone-based escrow with 72-hour auto-release for freelancers on Stellar.**
