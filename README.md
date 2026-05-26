@@ -1,4 +1,12 @@
 # 🛡️ GigGuard
+## CONTRACT ID 
+CCDX2TLOLR2PXVOHGTXF772YTU4XDW2LUHLNVPCJWK7KA4C7SXH2IS2F
+## CONTRACT LINK 
+https://stellar.expert/explorer/testnet/contract/CCDX2TLOLR2PXVOHGTXF772YTU4XDW2LUHLNVPCJWK7KA4C7SXH2IS2F
+
+![PICTURE](Stellar.png)
+
+
 **Milestone-based escrow with 72-hour auto-release for freelancers on Stellar.**
 > Client locks payment upfront. Freelancer delivers per milestone. If the client ghosts, funds auto-release after 72 hours. No middleman. 0.5% fee. Built on Stellar.
 ---
