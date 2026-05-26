@@ -1,0 +1,32 @@
+[package]
+name = "GigGuard"
+version = "0.1.0"
+edition = "2021"
+description = "Milestone-based escrow with 72-hour auto-release for freelancers on Stellar"
+license = "MIT"
+repository = "https://github.com/your-org/gig-guard"
+[lib]
+crate-type = ["cdylib", "rlib"]
+doctest = false
+[dependencies]
+soroban-sdk = "22.0.0"
+[dev-dependencies]
+soroban-sdk = { version = "22.0.0", features = ["testutils"] }
+# ============================================================================
+# Wasm Build Optimization
+# ============================================================================
+# These settings produce the smallest possible Wasm binary for deployment
+# to the Stellar network. Every byte counts — smaller contracts cost less
+# to deploy and execute.
+[profile.release]
+opt-level = "z"          # Optimize for size over speed
+overflow-checks = true   # Keep overflow checks for financial safety
+debug = 0                # Strip debug info from Wasm
+strip = "symbols"        # Remove symbol tables
+debug-assertions = false
+panic = "abort"          # Abort on panic (smaller than unwind)
+codegen-units = 1        # Single codegen unit for max optimization
+lto = true               # Link-time optimization for dead code elimination
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true  # Enable logs for debugging on testnet
